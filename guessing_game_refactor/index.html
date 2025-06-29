@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎯 Candy Guessing Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> Guessing  Number Game</h1>
+    <p class="intro">Can you guess the secret number? Let's find out! 🎉</p>
+
+    <!-- Setup area -->
+    <div id="setup">
+      <label for="maxInput">Pick the highest number 🍬</label><br>
+      <input type="number" id="maxInput" min="1" placeholder="e.g., 100" />
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <!-- Game area -->
+    <div id="gameArea" class="hidden">
+      <p id="feedback">🎯 Guess a number between 1 and <span id="rangeMax"></span></p>
+      <input type="number" id="guessInput" placeholder="Your guess" />
+      <div class="buttons">
+        <button id="guessBtn">🎈 Submit</button>
+        <button id="quitBtn" class="quit">❌ Quit</button>
+      </div>
+      <p id="status"></p>
+      <p id="attempts">📊 Attempts: 0</p>
+      <button id="resetBtn" class="hidden">🔁 Play Again</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
